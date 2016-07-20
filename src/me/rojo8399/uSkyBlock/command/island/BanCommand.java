@@ -17,8 +17,8 @@ public class BanCommand extends RequireIslandCommand {
     }
 
     @Override
-    protected boolean doExecute(String alias, Player player, PlayerInfo pi, IslandInfo island, Map<String, Object> data, String... args) {
-        if (args.length == 0) {
+    protected boolean doExecute(String alias, Player player, PlayerInfo pi, IslandInfo island, Map<String, Object> data, String... args) {    	
+    	if (args.length == 0) {
             player.sendMessage(I18nUtil.tr("\u00a7eThe following players are banned from warping to your island:"));
             player.sendMessage(I18nUtil.tr("\u00a74{0}", island.getBans()));
             player.sendMessage(I18nUtil.tr("\u00a7eTo ban/unban from your island, use /island ban <player>"));
